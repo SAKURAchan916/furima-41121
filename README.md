@@ -2,13 +2,13 @@
 |Column|Type|Options|
 |------|----|-------|
 |nickname|string|null: false|
-|e-mail|string|null: false|
-|password|string|null: false|
+|email|string|null: false|
+|encrypted_password|string|null: false|
 |farstname|string|null: false|
 |rastname|string|null: false|
 |farstnamekana|string|null: false|
 |rastnamekana|string|null: false|
-|date|string|null: false|
+|date|date|null: false|
 
 ### Association
 - has_many :items
@@ -19,16 +19,17 @@
 |------|----|-------|
 |name|string|null: false|
 |explanation|string|null: false|
-|category|string|
-|situation|string|
-|burden of shipping charges|string|
-|delivery area|string|
-|number of days|string|null: false|
+|category_id|Integer|null: false|
+|situation_id|Integer|null: false|
+|burden_of_shipping charges_id|Integer|null: false|
+|delivery_area_id|Integer|null: false|
+|number_of_days_id|Integer|null: false|
 |money|string|null: false|
+|user|refernces|null: false ,foreign_key: true|
 
 ### Association
-- belongs_to :users
-- has_many :buys
+- belongs_to :user
+- has_one :buy
 
 ## buys table
 |Column|Type|Options|
@@ -37,18 +38,21 @@
 |item|references|null: false ,foreign_key: true|
 
 ### Association
-- belongs_to :items
-- belongs_to :users
+- belongs_to :item
+- belongs_to :user
+- has_one :address
+
 
 ## addresses table
 |Column|Type|Options|
 |------|----|-------|
-|post code|Integer|null: false|
-|municipalities|string|null: false|
-|street address|Integer|null: false|
-|building name|string|null: false|
-|telephone number|Integer|null: false|
+|post_code|string|null: false|
+|prefecture_id|Integer|null: false|
+|municipalies|string|null: false|
+|street_address|string|null: false|
+|building_name|string|
+|telephone_number|string|null: false|
+|buy|references|null: false ,foreign_key: true|
 
 ### Association
-- belongs_to :buys
-- belongs_to :users
+- belongs_to :buy
