@@ -1,24 +1,31 @@
-# README
+## ユーザーテーブル
+|nickname|string|
+|e-mail|string|
+|password|string|
+|farstname|string|
+|rastname|string|
+|farstnamekana|string|
+|rastnamekana|string|
+|barthday|string|
+## 商品テーブル
+|name|string|
+|setumei|string|
+|kategori|string|
+|zyoutai|string|
+|haisouryounohutan|string|
+|haisousakinotiiki|string|
+|nissuu|string|
+|$|string|
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 購入記録テーブル
+|cardzyouhou|Intege|
+|kigen|Intege|
+|CVC|Intege|
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 配送先テーブル
+|yuubinbangou|Integer|
+|sikutyouson|string|
+|banti|Integer|
+|tatemonomei|string|
+|dennwabanngou|Integer|
