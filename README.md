@@ -4,10 +4,10 @@
 |nickname|string|null: false|
 |email|string|null: false ,unique: true|
 |encrypted_password|string|null: false|
-|farstname|string|null: false|
-|rastname|string|null: false|
-|farstnamekana|string|null: false|
-|rastnamekana|string|null: false|
+|first_name|string|null: false|
+|last_name|string|null: false|
+|first_name_kana|string|null: false|
+|last_name_kana|string|null: false|
 |barth|date|null: false|
 
 ### Association
@@ -23,7 +23,7 @@
 |situation_id|integer|null: false|
 |burden_of_shipping charges_id|integer|null: false|
 |delivery_area_id|Integer|null: false|
-|number_of_days_id|integer|null: false|
+|number_of_day_id|integer|null: false|
 |money|integer|null: false|
 |user|references|null: false ,foreign_key: true|
 
@@ -48,7 +48,7 @@
 |------|----|-------|
 |post_code|string|null: false|
 |delivery_area_id|integer|null: false ,foreign_key: true|
-|municipalies|string|null: false|
+|municipality|string|null: false|
 |street_address|string|null: false|
 |building_name|string|
 |telephone_number|string|null: false|
