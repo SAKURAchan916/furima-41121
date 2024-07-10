@@ -2,13 +2,13 @@
 |Column|Type|Options|
 |------|----|-------|
 |nickname|string|null: false|
-|email|string|null: false|
+|email|string|null: false ,unique: true|
 |encrypted_password|string|null: false|
 |farstname|string|null: false|
 |rastname|string|null: false|
 |farstnamekana|string|null: false|
 |rastnamekana|string|null: false|
-|date|date|null: false|
+|barth|date|null: false|
 
 ### Association
 - has_many :items
@@ -18,14 +18,14 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|explanation|string|null: false|
-|category_id|Integer|null: false|
-|situation_id|Integer|null: false|
-|burden_of_shipping charges_id|Integer|null: false|
+|explanation|integer|null: false|
+|category_id|integer|null: false|
+|situation_id|integer|null: false|
+|burden_of_shipping charges_id|integer|null: false|
 |delivery_area_id|Integer|null: false|
-|number_of_days_id|Integer|null: false|
-|money|string|null: false|
-|user|refernces|null: false ,foreign_key: true|
+|number_of_days_id|integer|null: false|
+|money|integer|null: false|
+|user|references|null: false ,foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -47,7 +47,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |post_code|string|null: false|
-|prefecture_id|Integer|null: false|
+|delivery_area_id|integer|null: false ,foreign_key: true|
 |municipalies|string|null: false|
 |street_address|string|null: false|
 |building_name|string|
