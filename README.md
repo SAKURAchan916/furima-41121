@@ -18,11 +18,11 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|explanation|integer|null: false|
+|explanation|text|null: false|
 |category_id|integer|null: false|
 |situation_id|integer|null: false|
-|burden_of_shipping charges_id|integer|null: false|
-|delivery_area_id|Integer|null: false|
+|burden_of_shipping_charge_id|integer|null: false|
+|delivery_area_id|integer|null: false|
 |number_of_day_id|integer|null: false|
 |money|integer|null: false|
 |user|references|null: false ,foreign_key: true|
@@ -47,7 +47,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |post_code|string|null: false|
-|delivery_area_id|integer|null: false ,foreign_key: true|
+|delivery_area_id|integer|null: false |
 |municipality|string|null: false|
 |street_address|string|null: false|
 |building_name|string|
