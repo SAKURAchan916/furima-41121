@@ -6,20 +6,20 @@ class ItemsController < ApplicationController
 #     @items = Item.all
 #   end
 
-  def new
-    @items = item.new
-  end
+  # def new
+  #   @items = item.new
+  # end
 
 #   def create
 #     Tweet.create(item_params)
 #     redirect_to '/'
 #   end
 
-   def destroy
-     item = item.find(params[:id])
-     item.destroy
-     redirect_to root_path
-   end
+  #  def destroy
+  #    item = item.find(params[:id])
+  #    item.destroy
+  #    redirect_to root_path
+  #  end
 
 #   def edit
 #   end
