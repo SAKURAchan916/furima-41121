@@ -10,9 +10,8 @@ class User < ApplicationRecord
           validates :first_name
           validates :last_name
           validates :birth
+          validates :nickname
+
         end
 end
 
-# バリデーションとは：DBに保存していいかどうかを審査する
-# ちゃんと正しい形式なのか、（例）カタカナかどうか
-# バリデーションに書くのは、カラムと正規表現
