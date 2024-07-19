@@ -8,7 +8,7 @@
 |last_name|string|null: false|
 |first_name_kana|string|null: false|
 |last_name_kana|string|null: false|
-|barth|date|null: false|
+|birth|date|null: false|
 
 ### Association
 - has_many :items
