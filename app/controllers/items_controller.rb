@@ -1,10 +1,10 @@
 class ItemsController < ApplicationController
-    before_action :set_items, only: [:edit, :show]
-  before_action :move_to_index, except: [:index, :show]
+  #   before_action :set_items, only: [:edit, :show]
+  # before_action :move_to_index, except: [:index, :show]
 
-#   def index
+   def index
 #     @items = Item.all
-#   end
+   end
 
   # def new
   #   @items = item.new
