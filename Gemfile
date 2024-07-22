@@ -77,8 +77,13 @@ end
 
 group :production do
   gem 'pg'
+
+  group :development, :test do
+    gem 'factory_bot_rails'
+  end
 end
 
  gem 'rspec-rails', '~> 4.0.0'
- 
+
 gem 'devise'
+gem 'pry-rails'
