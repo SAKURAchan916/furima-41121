@@ -12,7 +12,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string :last_name_kana,  null: false
       t.date :birth,  null: false
       t.string :nickname,  null: false
-      
 
       ## Recoverable
       t.string   :reset_password_token
@@ -21,7 +20,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       ## Rememberable
       t.datetime :remember_created_at
 
-      ## Trackable
+      # Trackable
       # t.integer  :sign_in_count, default: 0, null: false
       # t.datetime :current_sign_in_at
       # t.datetime :last_sign_in_at

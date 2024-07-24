@@ -23,7 +23,7 @@
 |situation_id|integer|null: false|
 |burden_of_shipping_charge_id|integer|null: false|
 |delivery_area_id|integer|null: false|
-|number_of_day_id|integer|null: false|
+|delivery_area_id|integer|null: false|
 |money|integer|null: false|
 |user|references|null: false ,foreign_key: true|
 
