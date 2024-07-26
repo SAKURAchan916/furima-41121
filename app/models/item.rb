@@ -1,6 +1,7 @@
 class Item < ApplicationRecord
     extend ActiveHash::Associations::ActiveRecordExtensions
     belongs_to :genre
+    has_one_attached :image
     with_options presence: true do
         validates :name
         validates :explanation
@@ -11,6 +12,5 @@ class Item < ApplicationRecord
         validates :delivery_area_id
         validates :money
         validates :user
-          with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i
     end
 end

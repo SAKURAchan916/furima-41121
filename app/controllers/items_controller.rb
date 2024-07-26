@@ -6,9 +6,9 @@ class ItemsController < ApplicationController
 #     @items = Item.all
    end
 
-  # def new
-  #   @items = item.new
-  # end
+  def new
+    @item = Item.new
+  end
 
 #   def create
 #     Tweet.create(item_params)
